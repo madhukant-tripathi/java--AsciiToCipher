@@ -50,7 +50,7 @@ class AsciiToCipher
 			}
 			else if((a>=78&&a<=90)||(a>=110&&a<=127))
 			{
-				a=a+13;
+				a=a-13;
 				nw=nw+(char)a;
 			}
 			else if(a==32)
@@ -62,3 +62,4 @@ class AsciiToCipher
 		System.out.println(nw);
 	}
 }
+
